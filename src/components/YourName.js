@@ -1,7 +1,7 @@
 function YourName({setName}) {
     return(
         <div>
-            <p>Enter with your name:</p>
+            <p>Enter with Your Name:</p>
             <input 
                 type="text" 
                 placeholder="what's your name?" 

@@ -1,6 +1,7 @@
 // import OtherList from './components/OtherList'
 import {useState} from 'react'
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 import YourName from './components/YourName';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
 
       {/* State Lift Test */}
       <YourName setName={setName} />
-      {name}
+      <HelloWorld name={name}/>
     </div>
   );
 }
