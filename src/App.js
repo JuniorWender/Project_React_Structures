@@ -1,26 +1,21 @@
-// import OtherList from './components/OtherList'
-import {useState} from 'react'
-import './App.css';
-import HelloWorld from './components/HelloWorld';
-import YourName from './components/YourName';
+import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
+import Home from './pages/Home'
+import Company from './pages/Company'
+import Contact from './pages/Contact'
+import Navbar from "./components/Navbar";
 
 function App() {
 
-  // const  Itens = ['React', 'Vue' , 'Angular'] //List Render
-  const [name, setName] = useState(); //State Lift
-  
   return (
-    <div className="App">
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route path="/company" element={<Company/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+      </Routes>
 
-      {/* List Render Test */}
-      {/* <OtherList frameworks={Itens}/> */}
-      {/* <OtherList frameworks={[]}/> */}
-
-
-      {/* State Lift Test */}
-      <YourName setName={setName} />
-      <HelloWorld name={name}/>
-    </div>
+    </Router>
   );
 }
 
