@@ -1,18 +1,9 @@
-import Button from './components/Button'
+import Conditional from './components/Conditional';
+
 function App() {
-
-  function meuEvento(){
-    console.log('ativando evento');
-  }
-
-  function segundoEvento(){
-    console.log('segundo evento');
-  }
-  
   return (
     <>
-      <Button event={meuEvento} text="primeiro evento"/>
-      <Button event={segundoEvento} text="segundoEvento"/>
+      <Conditional/>
     </>
   );
 }
