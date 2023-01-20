@@ -6,6 +6,7 @@ function Footer(){
             <FaFacebook/>
         </footer>
     )
+
 }
 
 export default Footer
